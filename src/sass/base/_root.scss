@@ -1,0 +1,155 @@
+/* Képhren SIMONIS
+*
+* /sass/styles.scss - Main stylesheet
+*
+* coded by Képhren SIMONIS
+*/
+html{
+	font-family: "oswald", "sans sérif";
+	font-size: 16px;
+	line-height: 1.5em;
+	color: $blackText;
+	background-image: url("#{ $imgPath }/stardust.png");
+}
+.icon{
+	font-family: "fontello";
+}
+.icon1{
+	font-family: "fontawesome";
+}
+.icon-g{
+	margin-right: 1em;
+}
+.icon-d{
+	margin-left: 1em;
+}
+// body{
+// 	background-image: url('../img/grille.png') ;
+// 	background-position: center center;
+// 	opacity: 0.6;
+// }
+.pageActive{
+	color: $lightGold !important;
+}
+.hidden{
+	display: none;
+}
+.heading1{
+	font-size: $firstTitle;
+}
+@media screen and (min-width: 1046px){
+	.all{
+		line-height: 1.25em;
+		display: block;
+		border: 2px solid $lightGold;
+		border-radius: 5px;
+		width: 25%;
+		max-width: 460px;
+		margin: 10em auto 0;
+		text-align: center;
+		padding: 1em 2em;
+		-webkit-transition: all 0.2s ease-in-out;
+	    -moz-transition: all 0.2s ease-in-out;
+	    -ms-transition: all 0.2s ease-in-out;
+	    -o-transition: all 0.2s ease-in-out;
+	    transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		color: $lightGold;
+		font-size: $partSubTitle;
+	}
+	.all-peinture:hover,
+	.all-peinture:focus{
+		background-color: $lightTransEffectText;
+	}
+	.all-livre:hover,
+	.all-livre:focus{
+		background-color: $blackTransEffectText;
+	}
+}
+@media screen and (max-width: 1045px) and (min-width: 800px){
+	.all{
+		line-height: 1.25em;
+		display: block;
+		border: 2px solid $lightGold;
+		border-radius: 5px;
+		width: 40%;
+		max-width: 460px;
+		margin: 10em auto 0;
+		text-align: center;
+		padding: 1em 2em;
+		-webkit-transition: all 0.2s ease-in-out;
+	    -moz-transition: all 0.2s ease-in-out;
+	    -ms-transition: all 0.2s ease-in-out;
+	    -o-transition: all 0.2s ease-in-out;
+	    transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		color: $lightGold;
+		font-size: $partSubTitle;
+	}
+	.all-peinture:hover,
+	.all-peinture:focus{
+		background-color: $lightTransEffectText;
+	}
+	.all-livre:hover,
+	.all-livre:focus{
+		background-color: $blackTransEffectText;
+	}
+}
+@media screen and (max-width: 801px) and (min-width: 523px){
+	.all{
+		line-height: 1.25em;
+		display: block;
+		border: 2px solid $lightGold;
+		border-radius: 5px;
+		width: 80%;
+		max-width: 460px;
+		margin: 10em auto 0;
+		text-align: center;
+		padding: 1em 2em;
+		-webkit-transition: all 0.2s ease-in-out;
+	    -moz-transition: all 0.2s ease-in-out;
+	    -ms-transition: all 0.2s ease-in-out;
+	    -o-transition: all 0.2s ease-in-out;
+	    transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		color: $lightGold;
+		font-size: $partSubTitle;
+	}
+	.all-peinture:hover,
+	.all-peinture:focus{
+		background-color: $lightTransEffectText;
+	}
+	.all-livre:hover,
+	.all-livre:focus{
+		background-color: $blackTransEffectText;
+	}
+}
+@media screen and (max-width: 522px){
+	.all{
+		line-height: 1.25em;
+		display: block;
+		border: 2px solid $lightGold;
+		border-radius: 5px;
+		width: 80%;
+		max-width: 460px;
+		margin: 10em auto 0;
+		text-align: center;
+		padding: 1em 2em;
+		-webkit-transition: all 0.2s ease-in-out;
+	    -moz-transition: all 0.2s ease-in-out;
+	    -ms-transition: all 0.2s ease-in-out;
+	    -o-transition: all 0.2s ease-in-out;
+	    transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		color: $lightGold;
+		font-size: $partSubTitle;
+	}
+	.all-peinture:hover,
+	.all-peinture:focus{
+		background-color: $lightTransEffectText;
+	}
+	.all-livre:hover,
+	.all-livre:focus{
+		background-color: $blackTransEffectText;
+	}
+}

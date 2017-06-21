@@ -1,0 +1,365 @@
+@media screen and (min-width: 1046px){
+	.page-liens{
+		padding: 14em 4% 14em;
+		background-color: $blackText;
+		color: $lightText;
+		background-image: url("#{ $imgPath }/stardust.png");
+		h2{
+			font-size: $sectionTitle;
+			text-align: center;
+			padding: 0.8rem 0;
+			margin: 0 auto 2em;
+			width: 25%;
+			border-bottom: 2px solid $lightGold;
+			border-top: 2px solid $lightGold;
+			position: relative;
+		}
+		h2::before{
+		    background-image: url("#{ $imgPath }/arr-down.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    bottom: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		h2::after{
+		    background-image: url("#{ $imgPath }/arr-top.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    top: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		&__bloc{
+			position: relative;
+			max-width: 1800px;
+			margin: 0 auto;
+			padding: 0 4%; 
+			display: flex;
+			line-height: 1.5em;
+		}
+		&__personne{
+			width: 25%;
+			margin: 0 auto;
+		}
+		&__personne:nth-child(-n+4){
+			padding-right: 2em;
+		}
+		&__img{
+			width: 150px;
+			height: 150px;
+			margin: 0 auto 3em;
+			display: block;
+			border-radius: 50%;
+			border: 2px solid $lightGold;
+			-webkit-transition: all 0.2s ease-in-out;
+		    -moz-transition: all 0.2s ease-in-out;
+		    -ms-transition: all 0.2s ease-in-out;
+		    -o-transition: all 0.2s ease-in-out;
+		    transition: all 0.2s ease-in-out;
+		}
+		&__description{
+			line-height: 1.5em;
+		}
+		&__goto{
+			position: absolute;
+			bottom: -7em;
+			width: 15%;
+			line-height: 1.25em;
+			display: block;
+			border: 2px solid $lightGold;
+			border-radius: 5px;
+			text-align: center;
+			margin-top: 2em;
+			padding: 1em 1em;
+			-webkit-transition: all 0.2s ease-in-out;
+		    -moz-transition: all 0.2s ease-in-out;
+		    -ms-transition: all 0.2s ease-in-out;
+		    -o-transition: all 0.2s ease-in-out;
+		    transition: all 0.2s ease-in-out;
+			text-decoration: none;
+			color: $lightGold;
+		}
+		&__goto:hover,
+		&__goto:focus{
+			background-color: $lightTransEffectText;
+		}
+	}
+}
+@media screen and (max-width: 1045px) and (min-width: 800px){
+	.page-liens{
+		padding: 14em 4% 6em;
+		background-color: $blackText;
+		color: $lightText;
+		background-image: url("#{ $imgPath }/stardust.png");
+		h2{
+			font-size: $sectionTitle;
+			text-align: center;
+			padding: 0.8rem 0;
+			margin: 0 auto 2em;
+			width: 25%;
+			border-bottom: 2px solid $lightGold;
+			border-top: 2px solid $lightGold;
+			position: relative;
+		}
+		h2::before{
+		    background-image: url("#{ $imgPath }/arr-down.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    bottom: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		h2::after{
+		    background-image: url("#{ $imgPath }/arr-top.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    top: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		&__bloc{
+			margin: 0 auto;
+			padding: 0 4%; 
+			display: block;
+			line-height: 1.5em;
+			text-align: center;
+		}
+		&__personne{
+			text-align: left;
+			width: 45%;
+			vertical-align: top;
+			display: inline-block;
+			padding: 0 2em;
+			margin-bottom: 8em;
+		}
+		&__img{
+			width: 150px;
+			height: 150px;
+			margin: 0 auto 3em;
+			display: block;
+			border-radius: 50%;
+			border: 2px solid $lightGold;
+			-webkit-transition: all 0.2s ease-in-out;
+		    -moz-transition: all 0.2s ease-in-out;
+		    -ms-transition: all 0.2s ease-in-out;
+		    -o-transition: all 0.2s ease-in-out;
+		    transition: all 0.2s ease-in-out;
+		}
+		&__description{
+			line-height: 1.5em;
+		}
+		&__goto{
+			line-height: 1.25em;
+			display: block;
+			border: 2px solid $lightGold;
+			border-radius: 5px;
+			text-align: center;
+			margin-top: 2em;
+			padding: 1em 2em;
+			-webkit-transition: all 0.2s ease-in-out;
+		    -moz-transition: all 0.2s ease-in-out;
+		    -ms-transition: all 0.2s ease-in-out;
+		    -o-transition: all 0.2s ease-in-out;
+		    transition: all 0.2s ease-in-out;
+			text-decoration: none;
+			color: $lightGold;
+		}
+		&__goto:hover,
+		&__goto:focus{
+			background-color: $lightTransEffectText;
+		}
+	}
+}
+@media screen and (max-width: 801px) and (min-width: 523px){
+	.page-liens{
+		padding: 14em 4% 6em;
+		background-color: $blackText;
+		color: $lightText;
+		background-image: url("#{ $imgPath }/stardust.png");
+		h2{
+			font-size: $sectionTitle;
+			text-align: center;
+			padding: 0.8rem 0;
+			margin: 0 auto 2em;
+			width: 40%;
+			border-bottom: 2px solid $lightGold;
+			border-top: 2px solid $lightGold;
+			position: relative;
+		}
+		h2::before{
+		    background-image: url("#{ $imgPath }/arr-down.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    bottom: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		h2::after{
+		    background-image: url("#{ $imgPath }/arr-top.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    top: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		&__bloc{
+			margin: 0 auto;
+			padding: 0 4%; 
+			line-height: 1.5em;
+		}
+		&__personne{
+			max-width: 460px;
+			padding: 0 2em;
+			margin: 0 auto 8em;
+		}
+		&__img{
+			width: 150px;
+			height: 150px;
+			margin: 0 auto 3em;
+			display: block;
+			border-radius: 50%;
+			border: 2px solid $lightGold;
+			-webkit-transition: all 0.2s ease-in-out;
+		    -moz-transition: all 0.2s ease-in-out;
+		    -ms-transition: all 0.2s ease-in-out;
+		    -o-transition: all 0.2s ease-in-out;
+		    transition: all 0.2s ease-in-out;
+		}
+		&__description{
+			line-height: 1.5em;
+		}
+		&__goto{
+			line-height: 1.25em;
+			display: block;
+			border: 2px solid $lightGold;
+			border-radius: 5px;
+			text-align: center;
+			margin-top: 2em;
+			padding: 1em 2em;
+			-webkit-transition: all 0.2s ease-in-out;
+		    -moz-transition: all 0.2s ease-in-out;
+		    -ms-transition: all 0.2s ease-in-out;
+		    -o-transition: all 0.2s ease-in-out;
+		    transition: all 0.2s ease-in-out;
+			text-decoration: none;
+			color: $lightGold;
+		}
+		&__goto:hover,
+		&__goto:focus{
+			background-color: $lightTransEffectText;
+		}
+	}
+}
+@media screen and (max-width: 522px){
+	.page-liens{
+		padding: 14em 4% 6em;
+		background-color: $blackText;
+		color: $lightText;
+		background-image: url("#{ $imgPath }/stardust.png");
+		h2{
+			font-size: $sectionTitle;
+			text-align: center;
+			padding: 0.8rem 0;
+			margin: 0 auto 2em;
+			width: 80%;
+			border-bottom: 2px solid $lightGold;
+			border-top: 2px solid $lightGold;
+			position: relative;
+		}
+		h2::before{
+		    background-image: url("#{ $imgPath }/arr-down.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    bottom: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		h2::after{
+		    background-image: url("#{ $imgPath }/arr-top.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    top: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		&__bloc{
+			margin: 0 auto;
+			padding: 0 4%; 
+			line-height: 1.5em;
+		}
+		&__personne{
+			max-width: 460px;
+			padding: 0 2em;
+			margin: 0 auto 8em;
+		}
+		&__img{
+			width: 150px;
+			height: 150px;
+			margin: 0 auto 3em;
+			display: block;
+			border-radius: 50%;
+			border: 2px solid $lightGold;
+			-webkit-transition: all 0.2s ease-in-out;
+		    -moz-transition: all 0.2s ease-in-out;
+		    -ms-transition: all 0.2s ease-in-out;
+		    -o-transition: all 0.2s ease-in-out;
+		    transition: all 0.2s ease-in-out;
+		}
+		&__description{
+			line-height: 1.5em;
+		}
+		&__goto{
+			line-height: 1.25em;
+			display: block;
+			border: 2px solid $lightGold;
+			border-radius: 5px;
+			text-align: center;
+			margin-top: 2em;
+			padding: 1em 2em;
+			-webkit-transition: all 0.2s ease-in-out;
+		    -moz-transition: all 0.2s ease-in-out;
+		    -ms-transition: all 0.2s ease-in-out;
+		    -o-transition: all 0.2s ease-in-out;
+		    transition: all 0.2s ease-in-out;
+			text-decoration: none;
+			color: $lightGold;
+		}
+		&__goto:hover,
+		&__goto:focus{
+			background-color: $lightTransEffectText;
+		}
+	}
+}

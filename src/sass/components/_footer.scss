@@ -1,0 +1,416 @@
+@media screen and (min-width: 1046px){
+    .footer{
+    	position: relative;
+        background-color: $lightGold;
+        padding: 2em 0 1em;
+        color: $lightText;
+        &__webmaster{
+        	h2{
+    			font-size: $partTitle;
+    			text-align: center;
+    			padding-bottom: 0.8rem;
+    			margin: 0 auto 2em;
+    			width: 25%;
+                max-width: 450px;
+                line-height: 1.5em;
+    			border-bottom: 2px solid $lightText;
+        	}
+        	.list{
+                display: flex;
+                width: 40%;
+                margin: 0 auto;
+                max-width: 960px;
+        		&__elt{
+                    margin: 0 auto 4em;
+        		}
+                &__elt:last-child{
+                    border-radius: 5px;
+                    width: 25px;
+                    height: 25px;
+                    position: absolute;
+                    right: 2em;
+                    text-align: center;
+                    border: 2px solid $lightText;
+                    -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                    transition: all 0.2s ease-in-out;
+                }
+                &__elt:last-child a{
+                    border-radius: 5px;
+                    text-decoration: none;
+                    color: $lightText;
+                    font-size: 1.3em;
+                    -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                    transition: all 0.2s ease-in-out;
+                }
+                &__elt:last-child:hover,
+                &__elt:last-child:focus{
+                    background-color: $lightTransEffectText;
+                }
+                &__elt:last-child:hover a,
+                &__elt:last-child:focus a{
+                    color: $blackText;
+                }
+                .Calque_1{
+                    border-radius: 5px;
+                    border: 2px solid $blackText;
+                    -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                    transition: all 0.2s ease-in-out;
+                    .st0{   
+                        fill:$blackText;
+                        -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+                .Calque_1:hover,
+                .Calque_1:focus{
+                    background-color: $lightTransEffectText;
+                    .st0m{   
+                        fill: $mail;
+                    }
+                    .st0l{   
+                        fill: $linkedin;
+                    }
+                    .st0f{   
+                        fill: $facebook;
+                    }
+                }
+        	}
+        }
+        &__CPR{
+        	text-align: center;
+    		&--copyright{
+    			font-size: $cpr;
+    		}
+            .dev-site{
+                color: $blackText;
+                text-decoration: none;
+                -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                transition: all 0.2s ease-in-out;
+            }
+            .dev-site:hover,
+            .dev-site:focus{
+                color: $lightText;
+            }
+        }
+    }
+    .footer::after{
+        background-image: linear-gradient(315deg, $lightTransEffectGold 50%, transparent 50%), linear-gradient(45deg, $lightTransEffectGold 50%, transparent 50%);
+        background-size: 25px 100%;
+        height: 30px;
+        left: 0;
+        top: -30px;
+        width: 100%;
+        content: "";
+        position: absolute;
+    }
+}
+@media screen and (max-width: 1045px) and (min-width: 800px){
+    .footer{
+        position: relative;
+        background-color: $lightGold;
+        padding: 2em 0 1em;
+        color: $lightText;
+        &__webmaster{
+            h2{
+                font-size: $partTitle;
+                line-height: 1.5em;
+                text-align: center;
+                padding-bottom: 0.8rem;
+                margin: 0 auto 2em;
+                width: 25%;
+                border-bottom: 2px solid $lightText;
+            }
+            .list{
+                display: flex;
+                width: 40%;
+                margin: 0 auto;
+                &__elt{
+                    margin: 0 auto 4em;
+                }
+                &__elt:last-child{
+                    border-radius: 5px;
+                    width: 25px;
+                    height: 25px;
+                    position: absolute;
+                    right: 2em;
+                    text-align: center;
+                    border: 2px solid $lightText;
+                    -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                    transition: all 0.2s ease-in-out;
+                }
+                &__elt:last-child a{
+                    border-radius: 5px;
+                    text-decoration: none;
+                    color: $lightText;
+                    font-size: 1.3em;
+                    -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                    transition: all 0.2s ease-in-out;
+                }
+                &__elt:last-child:hover,
+                &__elt:last-child:focus{
+                    background-color: $lightTransEffectText;
+                }
+                &__elt:last-child:hover a,
+                &__elt:last-child:focus a{
+                    color: $blackText;
+                }
+                .Calque_1{
+                    border-radius: 5px;
+                    border: 2px solid $blackText;
+                    -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                    transition: all 0.2s ease-in-out;
+                    .st0{   
+                        fill:$blackText;
+                        -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+                .Calque_1:hover,
+                .Calque_1:focus{
+                    background-color: $lightTransEffectText;
+                    .st0m{   
+                        fill: $mail;
+                    }
+                    .st0l{   
+                        fill: $linkedin;
+                    }
+                    .st0f{   
+                        fill: $facebook;
+                    }
+                }
+            }
+        }
+        &__CPR{
+            text-align: center;
+            &--copyright{
+                font-size: $cpr;
+            }
+            .dev-site{
+                color: $blackText;
+                text-decoration: none;
+                -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                transition: all 0.2s ease-in-out;
+            }
+            .dev-site:hover,
+            .dev-site:focus{
+                color: $lightText;
+            }
+        }
+    }
+    .footer::after{
+        background-image: linear-gradient(315deg, $lightTransEffectGold 50%, transparent 50%), linear-gradient(45deg, $lightTransEffectGold 50%, transparent 50%);
+        background-size: 25px 100%;
+        height: 30px;
+        left: 0;
+        top: -30px;
+        width: 100%;
+        content: "";
+        position: absolute;
+    }
+}
+@media screen and (max-width: 801px) and (min-width: 523px){
+    .footer{
+        position: relative;
+        background-color: $lightGold;
+        padding: 2em 0 1em;
+        color: $lightText;
+        &__webmaster{
+            h2{
+                font-size: $partTitle;
+                text-align: center;
+                line-height: 1.5em;
+                padding-bottom: 0.8rem;
+                margin: 0 auto 2em;
+                width: 40%;
+                border-bottom: 2px solid $lightText;
+            }
+            .list{
+                text-align: center;
+                &__elt{
+                    margin: 0 auto 2em;
+                }
+                &__elt:last-child{
+                    border-radius: 5px;
+                    width: 45px;
+                    height: 45px;
+                    position: absolute;
+                    top: 2em;
+                    right: 2em;
+                    text-align: center;
+                    border: 2px solid $lightText;
+                    -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                    transition: all 0.2s ease-in-out;
+                }
+                &__elt:last-child a{
+                    border-radius: 5px;
+                    text-decoration: none;
+                    color: $lightText;
+                    font-size: 2.5em;
+                    -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                    transition: all 0.2s ease-in-out;
+                }
+                &__elt:last-child:hover,
+                &__elt:last-child:focus{
+                    background-color: $lightTransEffectText;
+                }
+                &__elt:last-child:hover a,
+                &__elt:last-child:focus a{
+                    color: $blackText;
+                }
+                .Calque_1{
+                    border-radius: 5px;
+                    border: 2px solid $blackText;
+                    -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                    transition: all 0.2s ease-in-out;
+                    .st0{   
+                        fill:$blackText;
+                        -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+                .Calque_1:hover,
+                .Calque_1:focus{
+                    background-color: $lightTransEffectText;
+                    .st0m{   
+                        fill: $mail;
+                    }
+                    .st0l{   
+                        fill: $linkedin;
+                    }
+                    .st0f{   
+                        fill: $facebook;
+                    }
+                }
+            }
+        }
+        &__CPR{
+            text-align: center;
+            &--copyright{
+                font-size: $cpr;
+            }
+            .dev-site{
+                color: $blackText;
+                text-decoration: none;
+                -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                transition: all 0.2s ease-in-out;
+            }
+            .dev-site:hover,
+            .dev-site:focus{
+                color: $lightText;
+            }
+        }
+    }
+    .footer::after{
+        background-image: linear-gradient(315deg, $lightTransEffectGold 50%, transparent 50%), linear-gradient(45deg, $lightTransEffectGold 50%, transparent 50%);
+        background-size: 25px 100%;
+        height: 30px;
+        left: 0;
+        top: -30px;
+        width: 100%;
+        content: "";
+        position: absolute;
+    }
+}
+@media screen and (max-width: 522px){
+    .footer{
+        position: relative;
+        background-color: $lightGold;
+        padding: 2em 0 1em;
+        color: $lightText;
+        &__webmaster{
+            h2{
+                font-size: $partTitle;
+                text-align: center;
+                padding-bottom: 0.8rem;
+                margin: 0 auto 2em;
+                width: 80%;
+                border-bottom: 2px solid $lightText;
+            }
+            .list{
+                text-align: center;
+                &__elt{
+                    margin: 0 auto 2em;
+                }
+                &__elt:last-child{
+                    border-radius: 5px;
+                    width: 45px;
+                    height: 45px;
+                    position: absolute;
+                    bottom: 2em;
+                    right: 2em;
+                    text-align: center;
+                    border: 2px solid $lightText;
+                    -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                    transition: all 0.2s ease-in-out;
+                }
+                &__elt:last-child a{
+                    border-radius: 5px;
+                    text-decoration: none;
+                    color: $lightText;
+                    font-size: 2.5em;
+                    -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                    transition: all 0.2s ease-in-out;
+                }
+                &__elt:last-child:hover,
+                &__elt:last-child:focus{
+                    background-color: $lightTransEffectText;
+                }
+                &__elt:last-child:hover a,
+                &__elt:last-child:focus a{
+                    color: $blackText;
+                }
+                .Calque_1{
+                    border-radius: 5px;
+                    border: 2px solid $blackText;
+                    -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                    transition: all 0.2s ease-in-out;
+                    .st0{   
+                        fill:$blackText;
+                        -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+                .Calque_1:hover,
+                .Calque_1:focus{
+                    background-color: $lightTransEffectText;
+                    .st0m{   
+                        fill: $mail;
+                    }
+                    .st0l{   
+                        fill: $linkedin;
+                    }
+                    .st0f{   
+                        fill: $facebook;
+                    }
+                }
+            }
+        }
+        &__CPR{
+            text-align: center;
+            padding: 0 4%;
+            &--copyright{
+                font-size: $cpr;
+            }
+            .dev-site{
+                color: $blackText;
+                text-decoration: none;
+                -webkit-transition: all 0.2s ease-in-out; /* Safari */
+                transition: all 0.2s ease-in-out;
+            }
+            .dev-site:hover,
+            .dev-site:focus{
+                color: $lightText;
+            }
+        }
+    }
+    .footer::after{
+        background-image: linear-gradient(315deg, $lightTransEffectGold 50%, transparent 50%), linear-gradient(45deg, $lightTransEffectGold 50%, transparent 50%);
+        background-size: 25px 100%;
+        height: 30px;
+        left: 0;
+        top: -30px;
+        width: 100%;
+        content: "";
+        position: absolute;
+    }
+}

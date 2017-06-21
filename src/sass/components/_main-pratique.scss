@@ -1,0 +1,199 @@
+@media screen and (min-width: 816px){
+    .pratique{
+        position: relative;
+        .infos{
+        	background-color: $lightTransEffect;
+    	    position: absolute;
+    	    width: 40%;
+    	    height: 100%;
+    	    top: 0;
+            padding: 1em 4%;
+    		h3{
+    		    margin: 1em 0 0.5em;
+                font-size: $partTitle;
+    		}
+    		p{
+    		    padding: 2em 0;
+    		    line-height: 1.5em;
+                font-size: partSubTitle;
+    		}
+            .list{
+                line-height: 1.5em;
+                &__elt:last-child{
+                    margin-top: 1em;
+                }
+                &__elt:last-child a{
+                    color: $lightGold;
+                    text-decoration: none;
+                    -webkit-transition: all 0.2s ease-in-out;
+                    -moz-transition: all 0.2s ease-in-out;
+                    -ms-transition: all 0.2s ease-in-out;
+                    -o-transition: all 0.2s ease-in-out;
+                    transition: all 0.2s ease-in-out;
+                }
+                &__elt:last-child:hover a,
+                &__elt:last-child:focus a{
+                    color: $blackGreyText;
+                }
+            }
+    	}
+    	.carte{
+    		#map{
+                height: 350px;
+    		    background: silver;
+    		}
+    	}
+    }
+    .pratique::before{
+        background-image: linear-gradient(583deg, $blackBcg 50%, transparent 50%), linear-gradient(136deg, $blackBcg 50%, transparent 50%);
+        background-size: 25px 100%;
+        height: 30px;
+        left: 0;
+        top: 0px;
+        width: 100%;
+        content: "";
+        position: absolute;
+        z-index: 1;
+    }
+    .pratique::after{
+        background-image: linear-gradient(315deg, $blackBcg 50%, transparent 50%), linear-gradient(45deg, $blackBcg 50%, transparent 50%);
+        background-size: 25px 100%;
+        height: 30px;
+        left: 0;
+        bottom: 0px;
+        width: 100%;
+        content: "";
+        position: absolute;
+    }
+}
+@media screen and (max-width: 815px) and (min-width: 510px){
+    .pratique{
+        position: relative;
+        .infos{
+            background-color: $lightTransEffect;
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            top: 0;
+            padding: 1em 4%;
+            h3{
+                margin: 1em 0 0.5em;
+                font-size: $partTitle;
+            }
+            p{
+                padding: 2em 0;
+                line-height: 1.5em;
+                font-size: partSubTitle;
+            }
+            .list{
+                line-height: 1.5em;
+                &__elt:last-child{
+                    margin-top: 1em;
+                }
+                &__elt:last-child a{
+                    color: $lightGold;
+                    text-decoration: none;
+                    -webkit-transition: all 0.2s ease-in-out;
+                    -moz-transition: all 0.2s ease-in-out;
+                    -ms-transition: all 0.2s ease-in-out;
+                    -o-transition: all 0.2s ease-in-out;
+                    transition: all 0.2s ease-in-out;
+                }
+                &__elt:last-child:hover a,
+                &__elt:last-child:focus a{
+                    color: $blackGreyText;
+                }
+            }
+        }
+        .carte{
+            #map{
+                height: 400px;
+                background: silver;
+            }
+        }
+    }
+    .pratique::before{
+        background-image: linear-gradient(583deg, $blackBcg 50%, transparent 50%), linear-gradient(136deg, $blackBcg 50%, transparent 50%);
+        background-size: 25px 100%;
+        height: 30px;
+        left: 0;
+        top: 0px;
+        width: 100%;
+        content: "";
+        position: absolute;
+        z-index: 1;
+    }
+    .pratique::after{
+        background-image: linear-gradient(315deg, $blackBcg 50%, transparent 50%), linear-gradient(45deg, $blackBcg 50%, transparent 50%);
+        background-size: 25px 100%;
+        height: 30px;
+        left: 0;
+        bottom: 0px;
+        width: 100%;
+        content: "";
+        position: absolute;
+    }
+}
+@media screen and (max-width: 510px){
+    .pratique{
+        position: relative;
+        .infos{
+            background-color: $lightTransEffect;
+            padding: 2em;
+            h3{
+                margin: 1em 0 0.5em;
+                font-size: $partTitle;
+            }
+            p{
+                padding: 2em 0;
+                line-height: 1.5em;
+                font-size: partSubTitle;
+            }
+            .list{
+                line-height: 1.5em;
+                &__elt:last-child{
+                    margin-top: 1em;
+                }
+                &__elt:last-child a{
+                    color: $lightGold;
+                    text-decoration: none;
+                    -webkit-transition: all 0.2s ease-in-out;
+                    -moz-transition: all 0.2s ease-in-out;
+                    -ms-transition: all 0.2s ease-in-out;
+                    -o-transition: all 0.2s ease-in-out;
+                    transition: all 0.2s ease-in-out;
+                }
+                &__elt:last-child:hover a,
+                &__elt:last-child:focus a{
+                    color: $blackGreyText;
+                }
+            }
+        }
+        .carte{
+            #map{
+                display: none;
+            }
+        }
+    }
+    .pratique::before{
+        background-image: linear-gradient(583deg, $blackBcg 50%, transparent 50%), linear-gradient(136deg, $blackBcg 50%, transparent 50%);
+        background-size: 25px 100%;
+        height: 30px;
+        left: 0;
+        top: 0px;
+        width: 100%;
+        content: "";
+        position: absolute;
+        z-index: 1;
+    }
+    .pratique::after{
+        background-image: linear-gradient(315deg, $blackBcg 50%, transparent 50%), linear-gradient(45deg, $blackBcg 50%, transparent 50%);
+        background-size: 25px 100%;
+        height: 30px;
+        left: 0;
+        bottom: 0px;
+        width: 100%;
+        content: "";
+        position: absolute;
+    }
+}

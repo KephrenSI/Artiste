@@ -1,0 +1,87 @@
+/* Képhren SIMONIS
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Képhren SIMONIS
+ */
+
+// Variables
+
+// Oswald
+@font-face {
+    font-family: 'oswald';
+    src: url('#{ $fontPath }Oswald-Regular/Oswald-Regular.eot');
+    src: url('#{ $fontPath }Oswald-Regular/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }Oswald-Regular/Oswald-Regular.woff') format('woff'),
+         url('#{ $fontPath }Oswald-Regular/Oswald-Regular.ttf') format('truetype'),
+         url('#{ $fontPath }Oswald-Regular/Oswald-Regular.svg#regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'oswald';
+    src: url('#{ $fontPath }Oswald-RegularItalic/Oswald-RegularItalic.eot');
+    src: url('#{ $fontPath }Oswald-RegularItalic/Oswald-RegularItalic.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }Oswald-RegularItalic/Oswald-RegularItalic.woff') format('woff'),
+         url('#{ $fontPath }Oswald-RegularItalic/Oswald-RegularItalic.ttf') format('truetype'),
+         url('#{ $fontPath }Oswald-RegularItalic/Oswald-RegularItalic.svg#regular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'oswald';
+    src: url('#{ $fontPath }Oswald-DemiBold/Oswald-DemiBold.eot');
+    src: url('#{ $fontPath }Oswald-DemiBold/Oswald-DemiBold.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }Oswald-DemiBold/Oswald-DemiBold.woff') format('woff'),
+         url('#{ $fontPath }Oswald-DemiBold/Oswald-DemiBold.ttf') format('truetype'),
+         url('#{ $fontPath }Oswald-DemiBold/Oswald-DemiBold.svg#regular') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'oswald';
+    src: url('#{ $fontPath }Oswald-Bold/Oswald-Bold.eot');
+    src: url('#{ $fontPath }Oswald-Bold/Oswald-Bold.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }Oswald-Bold/Oswald-Bold.woff') format('woff'),
+         url('#{ $fontPath }Oswald-Bold/Oswald-Bold.ttf') format('truetype'),
+         url('#{ $fontPath }Oswald-Bold/Oswald-Bold.svg#regular') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'oswald';
+    src: url('#{ $fontPath }Oswald-Light/Oswald-Light.eot');
+    src: url('#{ $fontPath }Oswald-Light/Oswald-Light.eot?#iefix') format('embedded-opentype'),
+         url('#{ $fontPath }Oswald-Light/Oswald-Light.woff') format('woff'),
+         url('#{ $fontPath }Oswald-Light/Oswald-Light.ttf') format('truetype'),
+         url('#{ $fontPath }Oswald-Light/Oswald-Light.svg#regular') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+// Fontello
+@font-face {
+  font-family: 'fontello';
+  src: url('#{ $fontPath }Fontello/fontello.eot?66855790');
+  src: url('#{ $fontPath }Fontello/fontello.eot?66855790#iefix') format('embedded-opentype'),
+       url('#{ $fontPath }Fontello/fontello.woff2?66855790') format('woff2'),
+       url('#{ $fontPath }Fontello/fontello.woff?66855790') format('woff'),
+       url('#{ $fontPath }Fontello/fontello.ttf?66855790') format('truetype'),
+       url('#{ $fontPath }Fontello/fontello.svg?66855790#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Fontawesome
+@font-face {
+  font-family: 'fontawesome';
+  src:  url("#{ $fontPath }fontawesome/fontawesome-webfont.eot");
+  src:  url("#{ $fontPath }fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), 
+        url("#{ $fontPath }fontawesome/fontawesome-webfont.woff2") format("woff2"), 
+        url("#{ $fontPath }fontawesome/fontawesome-webfont.woff") format("woff"), 
+        url("#{ $fontPath }fontawesome/fontawesome-webfont.ttf") format("truetype"), 
+        url("#{ $fontPath }fontawesome/fontawesome-webfont.svg#fontawesomeregular") 
+    format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}

@@ -1,0 +1,398 @@
+@media screen and (min-width: 816px){
+    .page-pratique{
+        padding-top: 14em;
+        color: $lightText;
+        background-image: url("#{ $imgPath }/stardust.png");
+        h2{
+            font-size: $sectionTitle;
+            text-align: center;
+            padding: 0.8rem 4%;
+            margin: 0 auto  0.5em;
+            position: relative;
+        }
+        h2::after{
+            border-top: 2px solid $lightGold;
+            left: 0;
+            margin-left: 35%;
+            top: 0;
+            width: 30%;
+            content: "";
+            position: absolute;
+        }
+        h2::before{
+            background-image: url("#{ $imgPath }/arr-top.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            height: 40px;
+            left: 0;
+            top: -40px;
+            width: 100%;
+            content: "";
+            position: absolute;
+        }
+        &__subtitle{
+            font-size: $sectionSubTitle;
+            text-align: center;
+            margin: 0 auto 2em;
+            padding-bottom: 0.5em;
+            position: relative;
+        }
+        &__subtitle::after{
+            border-bottom: 2px solid $lightGold;
+            left: 0;
+            margin-left: 35%;
+            bottom: 0;
+            width: 30%;
+            content: "";
+            position: absolute;
+        }
+        &__subtitle::before{
+            background-image: url("#{ $imgPath }/arr-down.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            height: 40px;
+            left: 0;
+            bottom: -40px;
+            width: 100%;
+            content: "";
+            position: absolute;
+        }
+        .page-plan{
+            color: $blackText;
+            position: relative;
+            margin: 10em 0;
+            .page-infos{
+                background-color: $lightTransEffect;
+                position: absolute;
+                width: 40%;
+                height: 100%;
+                top: 0;
+                padding: 4em 4%;
+                h3{
+                    margin: 1em 0 0.5em;
+                    font-size: $partTitle;
+                }
+                p{
+                    padding: 2em 0;
+                    line-height: 1.5em;
+                    font-size: partSubTitle;
+                }
+                .page-list{
+                    line-height: 1.5em;
+                    &__elt:last-child{
+                        margin-top: 1em;
+                    }
+                    &__elt:last-child a{
+                        color: $lightGold;
+                        text-decoration: none;
+                        -webkit-transition: all 0.2s ease-in-out;
+                        -moz-transition: all 0.2s ease-in-out;
+                        -ms-transition: all 0.2s ease-in-out;
+                        -o-transition: all 0.2s ease-in-out;
+                        transition: all 0.2s ease-in-out;
+                    }
+                    &__elt:last-child:hover a,
+                    &__elt:last-child:focus a{
+                        color: $blackGreyText;
+                    }
+                }
+            }
+            .page-carte{
+                #map{
+                    height: 500px;
+                    background: silver;
+                }
+            }
+        }
+        .page-plan::after{
+            background-image: linear-gradient(315deg, $blackBcg 50%, transparent 50%), linear-gradient(45deg, $blackBcg 50%, transparent 50%);
+            background-size: 25px 100%;
+            height: 30px;
+            left: 0;
+            bottom: 0px;
+            width: 100%;
+            content: "";
+            position: absolute;
+        }
+        .page-plan::before{
+            background-image: linear-gradient(583deg, $blackBcg 50%, transparent 50%), linear-gradient(136deg, $blackBcg 50%, transparent 50%);
+            background-size: 25px 100%;
+            height: 30px;
+            left: 0;
+            top: 0px;
+            width: 100%;
+            content: "";
+            position: absolute;
+            z-index: 1;
+        }
+    }
+}
+@media screen and (max-width: 815px) and (min-width: 510px){
+    .page-pratique{
+        padding-top: 14em;
+        color: $lightText;
+        background-image: url("#{ $imgPath }/stardust.png");
+        h2{
+            font-size: $sectionTitle;
+            text-align: center;
+            padding: 0.8rem 4%;
+            margin: 0 auto  0.5em;
+            position: relative;
+        }
+        h2::after{
+            border-top: 2px solid $lightGold;
+            left: 0;
+            margin-left: 30%;
+            top: 0;
+            width: 40%;
+            content: "";
+            position: absolute;
+        }
+        h2::before{
+            background-image: url("#{ $imgPath }/arr-top.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            height: 40px;
+            left: 0;
+            top: -40px;
+            width: 100%;
+            content: "";
+            position: absolute;
+        }
+        &__subtitle{
+            font-size: $sectionSubTitle;
+            text-align: center;
+            margin: 0 auto 2em;
+            padding-bottom: 0.5em;
+            position: relative;
+        }
+        &__subtitle::after{
+            border-bottom: 2px solid $lightGold;
+            left: 0;
+            margin-left: 30%;
+            bottom: 0;
+            width: 40%;
+            content: "";
+            position: absolute;
+        }
+        &__subtitle::before{
+            background-image: url("#{ $imgPath }/arr-down.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            height: 40px;
+            left: 0;
+            bottom: -40px;
+            width: 100%;
+            content: "";
+            position: absolute;
+        }
+        .page-plan{
+            color: $blackText;
+            position: relative;
+            margin: 10em 0;
+            .page-infos{
+                background-color: $lightTransEffect;
+                width: 100%;
+                padding: 4em 4%;
+                h3{
+                    margin: 1em 0 0.5em;
+                    font-size: $partTitle;
+                }
+                p{
+                    padding: 2em 0;
+                    line-height: 1.5em;
+                    font-size: partSubTitle;
+                }
+                .page-list{
+                    line-height: 1.5em;
+                    &__elt:last-child{
+                        margin-top: 1em;
+                    }
+                    &__elt:last-child a{
+                        color: $lightGold;
+                        text-decoration: none;
+                        -webkit-transition: all 0.2s ease-in-out;
+                        -moz-transition: all 0.2s ease-in-out;
+                        -ms-transition: all 0.2s ease-in-out;
+                        -o-transition: all 0.2s ease-in-out;
+                        transition: all 0.2s ease-in-out;
+                    }
+                    &__elt:last-child:hover a,
+                    &__elt:last-child:focus a{
+                        color: $blackGreyText;
+                    }
+                }
+            }
+            .page-carte{
+                position: relative;
+                #map{
+                    height: 500px;
+                    background: silver;
+                }
+            }
+            .page-carte::before{
+                background-image: linear-gradient(583deg, $lightTransEffect 50%, transparent 50%), linear-gradient(136deg, $lightTransEffect 50%, transparent 50%);
+                background-size: 25px 100%;
+                height: 30px;
+                left: 0;
+                bottom: -30px;
+                width: 100%;
+                content: "";
+                position: absolute;
+            }
+        }
+        .page-plan::after{
+            background-image: linear-gradient(315deg, $lightTransEffect 50%, transparent 50%), linear-gradient(45deg, $lightTransEffect 50%, transparent 50%);
+            background-size: 25px 100%;
+            height: 30px;
+            left: 0;
+            bottom: 0px;
+            width: 100%;
+            content: "";
+            position: absolute;
+        }
+        .page-plan::before{
+            background-image: linear-gradient(583deg, $lightTransEffect 50%, transparent 50%), linear-gradient(136deg, $lightTransEffect 50%, transparent 50%);
+            background-size: 25px 100%;
+            height: 30px;
+            left: 0;
+            top: 0px;
+            width: 100%;
+            content: "";
+            position: absolute;
+            z-index: 1;
+        }
+    }
+}
+@media screen and (max-width: 510px){
+    .page-pratique{
+        padding-top: 14em;
+        color: $lightText;
+        background-image: url("#{ $imgPath }/stardust.png");
+        h2{
+            font-size: $sectionTitle;
+            text-align: center;
+            padding: 0.8rem 4%;
+            margin: 0 auto  0.5em;
+            position: relative;
+        }
+        h2::after{
+            border-top: 2px solid $lightGold;
+            left: 0;
+            margin-left: 10%;
+            top: 0;
+            width: 80%;
+            content: "";
+            position: absolute;
+        }
+        h2::before{
+            background-image: url("#{ $imgPath }/arr-top.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            height: 40px;
+            left: 0;
+            top: -40px;
+            width: 100%;
+            content: "";
+            position: absolute;
+        }
+        &__subtitle{
+            line-height: 1.5em;
+            font-size: $sectionSubTitle;
+            text-align: center;
+            margin: 0 4% 4em;
+            padding-bottom: 0.5em;
+            position: relative;
+        }
+        &__subtitle::after{
+            border-bottom: 2px solid $lightGold;
+            left: 0;
+            margin-left: 10%;
+            bottom: 0;
+            width: 80%;
+            content: "";
+            position: absolute;
+        }
+        &__subtitle::before{
+            background-image: url("#{ $imgPath }/arr-down.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            height: 40px;
+            left: 0;
+            bottom: -40px;
+            width: 100%;
+            content: "";
+            position: absolute;
+        }
+        .page-plan{
+            color: $blackText;
+            position: relative;
+            margin: 10em 0;
+            .page-infos{
+                background-color: $lightTransEffect;
+                width: 100%;
+                padding: 4em 4%;
+                h3{
+                    margin: 1em 0 0.5em;
+                    font-size: $partTitle;
+                }
+                p{
+                    padding: 2em 0;
+                    line-height: 1.5em;
+                    font-size: partSubTitle;
+                }
+                .page-list{
+                    line-height: 1.5em;
+                    &__elt:last-child{
+                        margin-top: 1em;
+                    }
+                    &__elt:last-child a{
+                        color: $lightGold;
+                        text-decoration: none;
+                        -webkit-transition: all 0.2s ease-in-out;
+                        -moz-transition: all 0.2s ease-in-out;
+                        -ms-transition: all 0.2s ease-in-out;
+                        -o-transition: all 0.2s ease-in-out;
+                        transition: all 0.2s ease-in-out;
+                    }
+                    &__elt:last-child:hover a,
+                    &__elt:last-child:focus a{
+                        color: $blackGreyText;
+                    }
+                }
+            }
+            .page-carte{
+                #map{
+                    display: none;
+                }
+            }
+        }
+        .page-plan::after{
+            background-image: linear-gradient(315deg, $lightTransEffect 50%, transparent 50%), linear-gradient(45deg, $lightTransEffect 50%, transparent 50%);
+            background-size: 25px 100%;
+            height: 30px;
+            left: 0;
+            bottom: 0px;
+            width: 100%;
+            content: "";
+            position: absolute;
+        }
+        .page-plan::before{
+            background-image: linear-gradient(583deg, $lightTransEffect 50%, transparent 50%), linear-gradient(136deg, $lightTransEffect 50%, transparent 50%);
+            background-size: 25px 100%;
+            height: 30px;
+            left: 0;
+            top: 0px;
+            width: 100%;
+            content: "";
+            position: absolute;
+            z-index: 1;
+        }
+    }
+}

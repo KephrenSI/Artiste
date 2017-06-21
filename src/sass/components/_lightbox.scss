@@ -1,0 +1,80 @@
+/* LightBox Style */
+/* -------- the object that calls the function  */
+.lightbox {
+  cursor: pointer;
+}
+/* -------- the LightBox  */
+#AI_lightbox {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+  opacity: 0;
+  display: none;
+  /* -------- the image in LightBox */
+}
+#AI_lightbox span {
+  position: absolute;
+  cursor: pointer;
+  z-index: 110;
+  text-align: center;
+  text-shadow: 0px 0px 5px #000000;
+}
+#AI_lightbox span i {
+  font-size: 2em;
+  color: #FFF;
+  line-height: 100px;
+  width: 100px;
+}
+#AI_lightbox .close {
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  padding: 0vh 10vw 100vh 90vw;
+}
+#AI_lightbox .next {
+  top: 50%;
+  right: 20%;
+  vertical-align: middle;
+  transform: translate(0px, -50%);
+  position: absolute;
+  padding: 25vh 8vw;
+  transition: all 0.2s ease-in-out;
+  // background-color: rgba( yellow, 0.5 );
+}
+#AI_lightbox .prev {
+  top: 50%;
+  left: 20%;
+  transform: translate(0px, -50%);
+  position: absolute;
+  padding: 25vh 8vw;
+  transition: all 0.2s ease-in-out;
+  // background-color: rgba( green, 0.5 );
+
+}
+#AI_lightbox .prev:hover,
+#AI_lightbox .prev:focus,
+#AI_lightbox .next:hover,
+#AI_lightbox .next:focus{
+  background-color: rgba( white, 0.2 );
+}
+#AI_lightbox img {
+  /* -------- If you like the edges around the picture just change a max-width and max-height to 90vw */
+  max-width: 100vw;
+  max-height: 100vh;
+  position: absolute;
+  /* -------- Set image to center */
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1.8);
+  -moz-transform: translate(-50%, -50%) scale(1.8);
+  -ms-transform: translate(-50%, -50%) scale(1.8);
+  -o-transform: translate(-50%, -50%) scale(1.8);
+  transform: translate(-50%, -50%) scale(1.8);
+}
+.material-icons{
+  font-family: "fontawesome";
+}

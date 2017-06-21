@@ -1,0 +1,57 @@
+/* Képhren/Projet
+*
+* /src/sass/styles.scss - Main style for projet
+*
+* coded by Képhren SIMONIS
+* started at 22/02/2017
+*/
+
+// 1. Settings - Variables globales
+@import "settings/paths";
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/sizes";
+
+// 2. Tools - Mixins globaux, functions & outils
+@import "tools/utils";
+
+// 3. Generic - Style de remise à zéro (reset, normalize…)
+@import "generic/meyer-reset";
+@import "generic/box-sizing";
+
+// 4. Base - Éléments bruts
+@import "base/root";
+
+// 5. Objects - Éléments de mise en forme non-cosmétique
+@import "objects/header";
+@import "objects/footer";
+@import "objects/main-banner";
+@import "objects/main-bio";
+@import "objects/main-galery";
+@import "objects/main-biblio";
+@import "objects/main-link";
+@import "objects/main-pratique";
+@import "objects/main-catalogue";
+@import "objects/pratique";
+@import "objects/bio";
+@import "objects/galery";
+@import "objects/biblio";
+@import "objects/liens";
+@import "objects/lightbox";
+
+// 6. Components - Design des composants, morceaux d'UI
+@import "components/header";
+@import "components/footer";
+@import "components/main-banner";
+@import "components/main-bio";
+@import "components/main-galery";
+@import "components/main-biblio";
+@import "components/main-link";
+@import "components/main-pratique";
+@import "components/main-catalogue";
+@import "components/pratique";
+@import "components/bio";
+@import "components/galery";
+@import "components/biblio";
+@import "components/liens";
+@import "components/lightbox";

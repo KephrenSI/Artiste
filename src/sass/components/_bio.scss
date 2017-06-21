@@ -1,0 +1,370 @@
+@media screen and (min-width: 1046px){
+	.page-biographie{
+		padding: 14em 4% 0;
+		position: relative;
+		line-height: 1.5em;
+		color: $lightText;
+		background-image: url("#{ $imgPath }/stardust.png");
+		h2{	
+			line-height: 1.25em;
+			font-size: $sectionTitle;
+			text-align: center;
+			padding-top: 0.8rem;
+			width: 25%;
+			margin: 0 auto 0.5em;
+			border-top: 2px solid $lightGold;
+			position: relative;
+		}
+		h2::before{
+		    background-image: url("#{ $imgPath }/arr-top.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    top: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		&__subtitle{
+			font-size: $sectionSubTitle;
+			text-align: center;
+			margin: 0 auto 2em;
+			width: 25%;
+			padding-bottom: 0.8rem;
+			border-bottom: 2px solid $lightGold;
+			position: relative;
+		}
+		&__subtitle::before{
+		    background-image: url("#{ $imgPath }/arr-down.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    bottom: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		h3{
+			font-size: $sectionSubTitle;
+			color: $lightGold;
+			margin-bottom: 2em;
+		}
+		.a-propos{
+			width: 80%;
+			margin: 0 auto 6em;
+			img{
+				float: left;
+				margin-right: 1em; 
+				border-radius: 15px;
+				border: 2px solid $lightGold;
+			}
+			.txt{
+				margin: 0 auto;
+				max-width: 1080px;
+				-moz-columns: 2;
+				-webkit-columns: 2;
+				columns: 2;
+				column-gap : 4em;
+			}
+			.paragraphes{
+				margin-bottom: 1.5em;
+				max-width: 460px;
+			}
+		}
+		.expo{
+			width: 80%;
+			margin: 0 auto 6em;
+			img{
+				float: left;
+				margin-right: 1em; 
+				border-radius: 15px;
+				border: 2px solid $lightGold;
+			}
+			.txt{
+				margin: 0 auto;
+				max-width: 1080px;
+				-moz-columns: 2;
+				-webkit-columns: 2;
+				columns: 2;
+				column-gap : 4em;
+			}
+			.paragraphes{
+				margin-bottom: 1.5em;
+				max-width: 460px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1045px) and (min-width: 800px){
+	.page-biographie{
+		padding: 14em 4% 0;
+		position: relative;
+		line-height: 1.5em;
+		color: $lightText;
+		background-image: url("#{ $imgPath }/stardust.png");
+		h2{	
+			line-height: 1.25em;
+			font-size: $sectionTitle;
+			text-align: center;
+			padding-top: 0.8rem;
+			width: 40%;
+			margin: 0 auto 0.5em;
+			border-top: 2px solid $lightGold;
+			position: relative;
+		}
+		h2::before{
+		    background-image: url("#{ $imgPath }/arr-top.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    top: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		&__subtitle{
+			font-size: $sectionSubTitle;
+			text-align: center;
+			margin: 0 auto 2em;
+			width: 40%;
+			padding-bottom: 0.8rem;
+			border-bottom: 2px solid $lightGold;
+			position: relative;
+		}
+		&__subtitle::before{
+		    background-image: url("#{ $imgPath }/arr-down.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    bottom: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		h3{
+			font-size: $sectionSubTitle;
+			color: $lightGold;
+			margin-bottom: 2em;
+		}
+		.a-propos{
+			margin-bottom: 6em;
+			img{
+				float: left;
+				margin-right: 1em; 
+				border-radius: 15px;
+				border: 2px solid $lightGold;
+			}
+			.txt{
+				-moz-columns: 2;
+				-webkit-columns: 2;
+				columns: 2;
+				column-gap : 4em;
+			}
+			.paragraphes{
+				margin-bottom: 1.5em;
+			}
+		}
+		.expo{
+			margin-bottom: 6em;
+			img{
+				float: left;
+				margin-right: 1em; 
+				border-radius: 15px;
+				border: 2px solid $lightGold;
+			}
+			.txt{
+				-moz-columns: 2;
+				-webkit-columns: 2;
+				columns: 2;
+				column-gap : 4em;
+			}
+			.paragraphes{
+				margin-bottom: 1.5em;
+			}
+		}
+	}
+}
+@media screen and (max-width: 801px) and (min-width: 523px){
+	.page-biographie{
+		padding: 14em 4% 0;
+		position: relative;
+		line-height: 1.5em;
+		color: $lightText;
+		background-image: url("#{ $imgPath }/stardust.png");
+		h2{	
+			line-height: 1.25em;
+			font-size: $sectionTitle;
+			text-align: center;
+			padding-top: 0.8rem;
+			width: 80%;
+			margin: 0 auto 0.5em;
+			border-top: 2px solid $lightGold;
+			position: relative;
+		}
+		h2::before{
+		    background-image: url("#{ $imgPath }/arr-top.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    top: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		&__subtitle{
+			font-size: $sectionSubTitle;
+			text-align: center;
+			margin: 0 auto 2em;
+			width: 80%;
+			padding-bottom: 0.8rem;
+			border-bottom: 2px solid $lightGold;
+			position: relative;
+		}
+		&__subtitle::before{
+		    background-image: url("#{ $imgPath }/arr-down.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    bottom: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		h3{
+			font-size: $sectionSubTitle;
+			color: $lightGold;
+			margin-bottom: 2em;
+			line-height: 1.5em;
+		}
+		.a-propos{
+			width: 80%;
+			margin: 0 auto 6em;
+			img{
+				float: left;
+				margin-right: 1em; 
+				border-radius: 15px;
+				border: 2px solid $lightGold;
+			}
+			.txt{
+			}
+			.paragraphes{
+				margin-bottom: 1.5em;
+				max-width: 460px;
+			}
+		}
+		.expo{
+			width: 80%;
+			margin: 0 auto 6em;
+			img{
+				float: left;
+				margin-right: 1em; 
+				border-radius: 15px;
+				border: 2px solid $lightGold;
+			}
+			.txt{
+			}
+			.paragraphes{
+				margin-bottom: 1.5em;
+				max-width: 460px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 522px){
+	.page-biographie{
+		padding: 14em 4% 0;
+		position: relative;
+		line-height: 1.5em;
+		color: $lightText;
+		background-image: url("#{ $imgPath }/stardust.png");
+		h2{	
+			line-height: 1.25em;
+			font-size: $sectionTitle;
+			text-align: center;
+			padding-top: 0.8rem;
+			width: 80%;
+			margin: 0 auto 0.5em;
+			border-top: 2px solid $lightGold;
+			position: relative;
+		}
+		h2::before{
+		    background-image: url("#{ $imgPath }/arr-top.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    top: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		&__subtitle{
+			font-size: $sectionSubTitle;
+			text-align: center;
+			margin: 0 auto 2em;
+			width: 80%;
+			padding-bottom: 0.8rem;
+			border-bottom: 2px solid $lightGold;
+			position: relative;
+		}
+		&__subtitle::before{
+		    background-image: url("#{ $imgPath }/arr-down.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    bottom: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		h3{
+			font-size: $sectionSubTitle;
+			color: $lightGold;
+			margin-bottom: 2em;
+			line-height: 1.5em;
+		}
+		.a-propos{
+			margin-bottom: 6em;
+			img{
+				display: block;
+				margin-bottom: 2em;
+				border-radius: 15px;
+				border: 2px solid $lightGold;
+			}
+			.txt{
+			}
+			.paragraphes{
+				margin-bottom: 1.5em;
+			}
+		}
+		.expo{
+			margin-bottom: 6em;
+			img{
+				display: block;
+				margin-bottom: 2em; 
+				border-radius: 15px;
+				border: 2px solid $lightGold;
+			}
+			.txt{
+			}
+			.paragraphes{
+				margin-bottom: 1.5em;
+			}
+		}
+	}
+}

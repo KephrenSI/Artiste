@@ -1,0 +1,780 @@
+@media screen and (min-width: 1283px){	
+	.galerie{
+		background-color: $blackText;
+		padding: 14em 0 8em;
+		background-image: url("#{ $imgPath }/stardust.png");
+		h2{
+			font-size: $sectionTitle;
+			color: $lightText;
+			text-align: center;
+			padding: 0.8rem 0;
+			margin: 0 auto 4em;
+			width: 25%;
+			max-width: 450px;
+			border-bottom: 2px solid $lightGold;
+			border-top: 2px solid $lightGold;
+			position: relative;
+		}
+		h2::before{
+		    background-image: url("#{ $imgPath }/arr-down.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    bottom: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		h2::after{
+		    background-image: url("#{ $imgPath }/arr-top.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    top: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		&__content{
+			color: $blackText;
+			display: flex;
+			max-width: 1800px;
+			margin: 0 auto;
+			.wrapper{
+				overflow: hidden;
+				margin: 0 auto;
+				width: 20em;
+				display: inline-block;
+			    vertical-align: top;
+			    border-radius: 15px;
+			    background-color: $lightGold;
+			    border: 2px solid $lightGold;
+			}
+			.peinture{
+			    cursor: default;
+			    position: relative;
+			    width: 20em;
+			    left: 50%;
+			    overflow: hidden;
+			    transform: -webkit-translate(-50%, 0%);
+			    transform: -moz-translate(-50%, 0%);
+			    transform: -ms-translate(-50%, 0%);
+			    transform: -o-translate(-50%, 0%);
+			    transform: translate(-50%, 0%);
+			}
+			.peinture-header{
+			    width: 20em;
+			    height: 20em;
+			    background-size: 18.55em 11.75em;
+			    -webkit-transition: all .3s ease-in-out;
+			    -moz-transition: all .3s ease-in-out;
+			    -ms-transition: all .3s ease-in-out;
+			    -o-transition: all .3s ease-in-out;
+			    transition: all .3s ease-in-out;
+			}
+			.peinture-header1{
+			    background: url("#{ $imgPath }/atelier.jpg") no-repeat;
+			    background-position: 50% 50%;
+			}
+			.peinture-header2{
+			    background: url("#{ $imgPath }/bateau.jpg") no-repeat;
+			    background-position: 50% 50%;
+			}
+			.peinture-header3{
+			    background: url("#{ $imgPath }/bleu.jpg") no-repeat;
+			    background-position: 50% 50%;
+			}
+			.peinture:hover .peinture-header,
+			.peinture:focus .peinture-header{
+			    transform: scale(1.2);
+			}
+			.peinture-header-date{
+				background-color: $lightGold;
+			    color: $lightText;
+			    float: right;
+			    border-radius: 0 0 0 50%;
+			    font-weight: 600;
+			    text-align: center;
+			    width: 50px;
+			    height: 50px;
+			    position: absolute;
+			    top: 0;
+			    right: 0;
+			}
+			.peinture-header-years{
+			    position: relative;
+			    top: 20%;
+			    left: 0;
+			}
+			.peinture-body{
+			    height: 180px;
+			    background-color: $lightText;
+			    padding: 0 1em;
+			    position: relative;
+			    z-index: 2;
+			}
+			.peinture-body-header{
+			    position: absolute;
+			    height: 180px;
+			    left: 0;
+			    width: 100%;
+			    padding: 1em 1em 3em;
+			    background-color: $lightText;
+			    -webkit-transition: all .3s ease-in-out;
+			    -moz-transition: all .3s ease-in-out;
+			    -ms-transition: all .3s ease-in-out;
+			    -o-transition: all .3s ease-in-out;
+			    transition: all .3s ease-in-out;
+			}
+			.peinture-body-header p{
+			    padding-top: 0.5em;
+			}
+			.peinture-body-header p:nth-child(2){
+			    padding-top: 2em;
+			}
+			.peinture:hover .peinture-body-header, 
+			.peinture:focus .peinture-body-header{
+			    margin-top: -10em;
+			}
+			.wrapper h3{
+			    color: $blackText;
+			    font-size: $partTitle;
+			    font-weight: bold;
+			    line-height: 1.35em;
+			    margin-bottom: 0.8em;
+			    padding-right: 1em;
+			}
+			.peinture-body-description{
+			    opacity: 0;
+			    padding-top: 1.5em;
+			    color: $blackText;
+			    line-height: 1.5em;
+			    -webkit-transition: all .2s ease-in-out;
+			    -moz-transition: all .2s ease-in-out;
+			    -ms-transition: all .2s ease-in-out;
+			    -o-transition: all .2s ease-in-out;
+			    transition: all .2s ease-in-out;
+			}
+			.peinture:hover .peinture-body-description, 
+			.peinture:focus .peinture-body-description{
+			    opacity: 1;
+			    -webkit-transition: all .5s ease-in-out;
+			    -moz-transition: all .5s ease-in-out;
+			    -ms-transition: all .5s ease-in-out;
+			    -o-transition: all .5s ease-in-out;
+			    transition: all .5s ease-in-out;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1282px) and (min-width: 1046px){
+	.galerie{
+		background-color: $blackText;
+		padding: 14em 0 8em;
+		background-image: url("#{ $imgPath }/stardust.png");
+		h2{
+			font-size: $sectionTitle;
+			color: $lightText;
+			text-align: center;
+			padding: 0.8rem 0;
+			margin: 0 auto 4em;
+			width: 25%;
+			border-bottom: 2px solid $lightGold;
+			border-top: 2px solid $lightGold;
+			position: relative;
+		}
+		h2::before{
+		    background-image: url("#{ $imgPath }/arr-down.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    bottom: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		h2::after{
+		    background-image: url("#{ $imgPath }/arr-top.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    top: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		&__content{
+			color: $blackText;
+			text-align: center;
+			.wrapper{
+				text-align: left;
+				overflow: hidden;
+				margin: 0 auto;
+				width: 20em;
+				display: inline-block;
+			    vertical-align: top;
+			    border-radius: 15px;
+			    background-color: $lightGold;
+			    border: 2px solid $lightGold;
+			}
+			.wrapper:nth-child(n+2){
+				margin-left: 2em;
+			}
+			.peinture{
+			    cursor: default;
+			    position: relative;
+			    width: 20em;
+			    left: 50%;
+			    overflow: hidden;
+			    transform: -webkit-translate(-50%, 0%);
+			    transform: -moz-translate(-50%, 0%);
+			    transform: -ms-translate(-50%, 0%);
+			    transform: -o-translate(-50%, 0%);
+			    transform: translate(-50%, 0%);
+			}
+			.peinture-header{
+			    width: 20em;
+			    height: 18em;
+			    background-size: 18.55em 11.75em;
+			    -webkit-transition: all .3s ease-in-out;
+			    -moz-transition: all .3s ease-in-out;
+			    -ms-transition: all .3s ease-in-out;
+			    -o-transition: all .3s ease-in-out;
+			    transition: all .3s ease-in-out;
+			}
+			.peinture-header1{
+			    background: url("#{ $imgPath }/atelier.jpg") no-repeat;
+			    background-position: 50% 50%;
+			}
+			.peinture-header2{
+			    background: url("#{ $imgPath }/bateau.jpg") no-repeat;
+			    background-position: 50% 50%;
+			}
+			.peinture-header3{
+			    background: url("#{ $imgPath }/bleu.jpg") no-repeat;
+			    background-position: 50% 50%;
+			}
+			.peinture:hover .peinture-header,
+			.peinture:focus .peinture-header{
+			    transform: scale(1.2);
+			}
+			.peinture-header-date{
+				background-color: $lightGold;
+			    color: $lightText;
+			    float: right;
+			    border-radius: 0 0 0 50%;
+			    font-weight: 600;
+			    text-align: center;
+			    width: 50px;
+			    height: 50px;
+			    position: absolute;
+			    top: 0;
+			    right: 0;
+			}
+			.peinture-header-years{
+			    position: relative;
+			    top: 20%;
+			    left: 0;
+			}
+			.peinture-body{
+			    height: 200px;
+			    background-color: $lightText;
+			    padding: 0 1em;
+			    position: relative;
+			    z-index: 2;
+			}
+			.peinture-body-header{
+			    position: absolute;
+			    height: 180px;
+			    left: 0;
+			    width: 100%;
+			    padding: 1em 1em 3em;
+			    background-color: $lightText;
+			    -webkit-transition: all .3s ease-in-out;
+			    -moz-transition: all .3s ease-in-out;
+			    -ms-transition: all .3s ease-in-out;
+			    -o-transition: all .3s ease-in-out;
+			    transition: all .3s ease-in-out;
+			}
+			.peinture-body-header p{
+			    padding-top: 0.5em;
+			}
+			.peinture-body-header p:nth-child(2){
+			    padding-top: 2em;
+			}
+			.peinture:hover .peinture-body-header, 
+			.peinture:focus .peinture-body-header{
+			    margin-top: -10em;
+			}
+			.wrapper h3{
+			    color: $blackText;
+			    font-size: $partTitle;
+			    font-weight: bold;
+			    line-height: 1.35em;
+			    margin-bottom: 0.8em;
+			    padding-right: 1em;
+			}
+			.peinture-body-description{
+			    opacity: 0;
+			    padding-top: 3em;
+			    color: $blackText;
+			    line-height: 1.5em;
+			    -webkit-transition: all .2s ease-in-out;
+			    -moz-transition: all .2s ease-in-out;
+			    -ms-transition: all .2s ease-in-out;
+			    -o-transition: all .2s ease-in-out;
+			    transition: all .2s ease-in-out;
+			}
+			.peinture:hover .peinture-body-description, 
+			.peinture:focus .peinture-body-description{
+			    opacity: 1;
+			    -webkit-transition: all .5s ease-in-out;
+			    -moz-transition: all .5s ease-in-out;
+			    -ms-transition: all .5s ease-in-out;
+			    -o-transition: all .5s ease-in-out;
+			    transition: all .5s ease-in-out;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1045px) and (min-width: 801px){
+	.galerie{
+		background-color: $blackText;
+		padding: 14em 0 8em;
+		background-image: url("#{ $imgPath }/stardust.png");
+		h2{
+			font-size: $sectionTitle;
+			color: $lightText;
+			text-align: center;
+			padding: 0.8rem 0;
+			margin: 0 auto 4em;
+			width: 40%;
+			border-bottom: 2px solid $lightGold;
+			border-top: 2px solid $lightGold;
+			position: relative;
+		}
+		h2::before{
+		    background-image: url("#{ $imgPath }/arr-down.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    bottom: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		h2::after{
+		    background-image: url("#{ $imgPath }/arr-top.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    top: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		&__content{
+			color: $blackText;
+			.wrapper{
+				overflow: hidden;
+				margin: 0 auto 10em;
+				width: 20em;
+				display: block;
+			    vertical-align: top;
+			    border-radius: 15px;
+			    background-color: $lightGold;
+			    border: 2px solid $lightGold;
+			}
+			.peinture{
+			    cursor: default;
+			    position: relative;
+			    width: 20em;
+			    left: 50%;
+			    overflow: hidden;
+			    transform: -webkit-translate(-50%, 0%);
+			    transform: -moz-translate(-50%, 0%);
+			    transform: -ms-translate(-50%, 0%);
+			    transform: -o-translate(-50%, 0%);
+			    transform: translate(-50%, 0%);
+			}
+			.peinture-header{
+			    width: 20em;
+			    height: 20em;
+			    background-size: 18.55em 11.75em;
+			    -webkit-transition: all .3s ease-in-out;
+			    -moz-transition: all .3s ease-in-out;
+			    -ms-transition: all .3s ease-in-out;
+			    -o-transition: all .3s ease-in-out;
+			    transition: all .3s ease-in-out;
+			}
+			.peinture-header1{
+			    background: url("#{ $imgPath }/atelier.jpg") no-repeat;
+			    background-position: 50% 50%;
+			}
+			.peinture-header2{
+			    background: url("#{ $imgPath }/bateau.jpg") no-repeat;
+			    background-position: 50% 50%;
+			}
+			.peinture-header3{
+			    background: url("#{ $imgPath }/bleu.jpg") no-repeat;
+			    background-position: 50% 50%;
+			}
+			.peinture:hover .peinture-header,
+			.peinture:focus .peinture-header{
+			    transform: scale(1.2);
+			}
+			.peinture-header-date{
+				background-color: $lightGold;
+			    color: $lightText;
+			    float: right;
+			    border-radius: 0 0 0 50%;
+			    font-weight: 600;
+			    text-align: center;
+			    width: 50px;
+			    height: 50px;
+			    position: absolute;
+			    top: 0;
+			    right: 0;
+			}
+			.peinture-header-years{
+			    position: relative;
+			    top: 20%;
+			    left: 0;
+			}
+			.peinture-body{
+			    height: 180px;
+			    background-color: $lightText;
+			    padding: 0 1em;
+			    position: relative;
+			    z-index: 2;
+			}
+			.peinture-body-header{
+			    position: absolute;
+			    height: 180px;
+			    left: 0;
+			    width: 100%;
+			    padding: 1em 1em 3em;
+			    background-color: $lightText;
+			    -webkit-transition: all .3s ease-in-out;
+			    -moz-transition: all .3s ease-in-out;
+			    -ms-transition: all .3s ease-in-out;
+			    -o-transition: all .3s ease-in-out;
+			    transition: all .3s ease-in-out;
+			}
+			.peinture-body-header p{
+			    padding-top: 0.5em;
+			}
+			.peinture-body-header p:nth-child(2){
+			    padding-top: 2em;
+			}
+			.peinture .peinture-body-header, 
+			.peinture .peinture-body-header{
+			    margin-top: -10em;
+			}
+			.wrapper h3{
+			    color: $blackText;
+			    font-size: $partTitle;
+			    font-weight: bold;
+			    line-height: 1.35em;
+			    margin-bottom: 0.8em;
+			    padding-right: 1em;
+			}
+			.peinture-body-description{
+			    padding-top: 1.5em;
+			    color: $blackText;
+			    line-height: 1.5em;
+			}
+		}
+	}
+}
+@media screen and (max-width: 801px) and (min-width: 523px){
+	.galerie{
+		background-color: $blackText;
+		padding: 14em 0 8em;
+		background-image: url("#{ $imgPath }/stardust.png");
+		h2{
+			font-size: $sectionTitle;
+			color: $lightText;
+			text-align: center;
+			padding: 0.8rem 0;
+			margin: 0 auto 4em;
+			width: 80%;
+			border-bottom: 2px solid $lightGold;
+			border-top: 2px solid $lightGold;
+			position: relative;
+		}
+		h2::before{
+		    background-image: url("#{ $imgPath }/arr-down.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    bottom: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		h2::after{
+		    background-image: url("#{ $imgPath }/arr-top.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    top: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		&__content{
+			color: $blackText;
+			.wrapper{
+				overflow: hidden;
+				margin: 0 auto 10em;
+				width: 20em;
+				display: block;
+			    vertical-align: top;
+			    border-radius: 15px;
+			    background-color: $lightGold;
+			    border: 2px solid $lightGold;
+			}
+			.peinture{
+			    cursor: default;
+			    position: relative;
+			    width: 20em;
+			    left: 50%;
+			    overflow: hidden;
+			    transform: -webkit-translate(-50%, 0%);
+			    transform: -moz-translate(-50%, 0%);
+			    transform: -ms-translate(-50%, 0%);
+			    transform: -o-translate(-50%, 0%);
+			    transform: translate(-50%, 0%);
+			}
+			.peinture-header{
+			    width: 20em;
+			    height: 25em;
+			    background-size: 18.55em 11.75em;
+			}
+			.peinture-header1{
+			    background: url("#{ $imgPath }/atelier.jpg") no-repeat;
+			    background-position: 50% 50%;
+			}
+			.peinture-header2{
+			    background: url("#{ $imgPath }/bateau.jpg") no-repeat;
+			    background-position: 50% 50%;
+			}
+			.peinture-header3{
+			    background: url("#{ $imgPath }/bleu.jpg") no-repeat;
+			    background-position: 50% 50%;
+			}
+			.peinture .peinture-header,
+			.peinture .peinture-header{
+			    transform: scale(2);
+			}
+			.peinture-header-date{
+				background-color: $lightGold;
+			    color: $lightText;
+			    float: right;
+			    border-radius: 0 0 0 50%;
+			    font-weight: 600;
+			    text-align: center;
+			    width: 50px;
+			    height: 50px;
+			    position: absolute;
+			    top: 0;
+			    right: 0;
+			}
+			.peinture-header-years{
+			    position: relative;
+			    top: 20%;
+			    left: 0;
+			}
+			.peinture-body{
+			    height: 160px;
+			    background-color: $lightText;
+			    padding: 2em;
+			    position: relative;
+			    z-index: 2;
+			}
+			.peinture-body-header{
+			    position: absolute;
+			    height: 160px;
+			    left: 0;
+			    width: 100%;
+			    padding: 1em 1em 3em;
+			    background-color: $lightText;
+			}
+			.peinture-body-header p{
+			    padding-top: 0.5em;
+			}
+			.peinture-body-header p:nth-child(2){
+			    padding-top: 2em;
+			}
+			.peinture .peinture-body-header, 
+			.peinture .peinture-body-header{
+			    margin-top: -12em;
+			}
+			.wrapper h3{
+			    color: $blackText;
+			    font-size: $partTitle;
+			    font-weight: bold;
+			    line-height: 1.35em;
+			    margin-bottom: 0.8em;
+			    padding-right: 1em;
+			}
+		}
+	}
+}
+@media screen and (max-width: 522px){
+	.galerie{
+		background-color: $blackText;
+		padding: 14em 0 8em;
+		background-image: url("#{ $imgPath }/stardust.png");
+		h2{
+			font-size: $sectionTitle;
+			color: $lightText;
+			text-align: center;
+			padding: 0.8rem 0;
+			margin: 0 auto 4em;
+			width: 80%;
+			border-bottom: 2px solid $lightGold;
+			border-top: 2px solid $lightGold;
+			position: relative;
+		}
+		h2::before{
+		    background-image: url("#{ $imgPath }/arr-down.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    bottom: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		h2::after{
+		    background-image: url("#{ $imgPath }/arr-top.svg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    background-size: 100% 100%;
+		    height: 40px;
+		    left: 0;
+		    top: -40px;
+		    width: 100%;
+		    content: "";
+		    position: absolute;
+		}
+		&__content{
+			color: $blackText;
+			.wrapper{
+				overflow: hidden;
+				margin: 0 auto 10em;
+				width: 18em;
+				display: block;
+			    vertical-align: top;
+			    border-radius: 15px;
+			    background-color: $lightGold;
+			    border: 2px solid $lightGold;
+			}
+			.peinture{
+			    cursor: default;
+			    position: relative;
+			    width: 18em;
+			    left: 50%;
+			    overflow: hidden;
+			    transform: -webkit-translate(-50%, 0%);
+			    transform: -moz-translate(-50%, 0%);
+			    transform: -ms-translate(-50%, 0%);
+			    transform: -o-translate(-50%, 0%);
+			    transform: translate(-50%, 0%);
+			}
+			.peinture-header{
+			    width: 18em;
+			    height: 25em;
+			    background-size: 18.55em 11.75em;
+			}
+			.peinture-header1{
+			    background: url("#{ $imgPath }/atelier.jpg") no-repeat;
+			    background-position: 50% 50%;
+			}
+			.peinture-header2{
+			    background: url("#{ $imgPath }/bateau.jpg") no-repeat;
+			    background-position: 50% 50%;
+			}
+			.peinture-header3{
+			    background: url("#{ $imgPath }/bleu.jpg") no-repeat;
+			    background-position: 50% 50%;
+			}
+			.peinture .peinture-header,
+			.peinture .peinture-header{
+			    transform: scale(2);
+			}
+			.peinture-header-date{
+				background-color: $lightGold;
+			    color: $lightText;
+			    float: right;
+			    border-radius: 0 0 0 50%;
+			    font-weight: 600;
+			    text-align: center;
+			    width: 50px;
+			    height: 50px;
+			    position: absolute;
+			    top: 0;
+			    right: 0;
+			}
+			.peinture-header-years{
+			    position: relative;
+			    top: 20%;
+			    left: 0;
+			}
+			.peinture-body{
+			    height: 160px;
+			    background-color: $lightText;
+			    padding: 2em 0.8em;
+			    position: relative;
+			    z-index: 2;
+			    line-height: 1.25em;
+			}
+			.peinture-body-header{
+			    position: absolute;
+			    height: 160px;
+			    left: 0;
+			    width: 100%;
+			    padding: 1em 0.8em 3em;
+			    background-color: $lightText;
+			}
+			.peinture-body-header p{
+			    padding-top: 0.5em;
+			}
+			.peinture-body-header p:nth-child(2){
+			    padding-top: 2em;
+			}
+			.peinture .peinture-body-header, 
+			.peinture .peinture-body-header{
+			    margin-top: -12em;
+			}
+			.wrapper h3{
+			    color: $blackText;
+			    font-size: $partTitle;
+			    font-weight: bold;
+			    line-height: 1.35em;
+			    margin-bottom: 0.8em;
+			    padding-right: 1em;
+			}
+		}
+	}
+}
